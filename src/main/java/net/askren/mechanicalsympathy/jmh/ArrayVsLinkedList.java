@@ -1,4 +1,4 @@
-package net.askren.mechanicalsympathy.performance;
+package net.askren.mechanicalsympathy.jmh;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -16,14 +16,14 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
 
-@BenchmarkMode(Mode.SingleShotTime)
-@Fork(value=1)
+@BenchmarkMode(Mode.Throughput)
+@Fork(value=20)
 @Warmup(iterations=20)
 @Measurement(iterations = 20)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
 public class ArrayVsLinkedList {
-	private static final int NUM_VALUES = 10000000;
+	private static final int NUM_VALUES = 100000;
 	private LinkedList<String> linkedList;
 	private ArrayList<String> arrayList;
 	private String[] array;
