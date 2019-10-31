@@ -1,4 +1,4 @@
-# mechanical-sympathy-java-perf
+# Lightning Fast Java
 Performance Tests to show Mechanical Sympathy principles in Java
 
 
