@@ -20,5 +20,5 @@ java -jar target/benchmarks.jar net.askren.mechanicalsympathy.jmh.TestMemoryAcce
 
 ## Non JMH Benchmarks
 ### To run the SequentialIOPerformance Benchmark run:
-Run java -jar target/java-performance-0.0.1-SNAPSHOT.jar net.askren.mechanicalsympathy.TestSequentialoPerformance
+Run java -cp target/java-performance-0.0.1-SNAPSHOT.jar net.askren.mechanicalsympathy.TestSequentialIoPerformance
 
