@@ -14,7 +14,7 @@ import java.nio.ByteBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class TestSequentialoPerformance {
+public class TestSequentialIoPerformance {
 	public static final int PAGE_SIZE = 1024 * 4;
     public static final long FILE_SIZE = PAGE_SIZE * 2000L * 1000L/20L;
 	public static final long NUM_PAGES = (FILE_SIZE/PAGE_SIZE);
