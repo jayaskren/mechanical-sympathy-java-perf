@@ -9,6 +9,8 @@ To build the tests:
 4. Run mvn clean install
 
 ## JMH Benchmarks
+JMH runs benchmarks over and over again to get good statistical sample.  If you are in a hurry, you may lower the number of Forks to 1.  The different options for running JMH benchmarks [can be found here](https://github.com/guozheng/jmh-tutorial/blob/master/README.md).  Otherwise, I recommend running them over night.
+
 ### To run the Array Vs LinkedList benchmark run:
 java -jar target/benchmarks.jar net.askren.mechanicalsympathy.jmh.ArrayVsLinkedList
 
