@@ -1,8 +1,10 @@
 # Lightning Fast Java
 Performance Tests to show Mechanical Sympathy principles in Java
 
+To run the IO tests, run the main in TestSequentialIoPerformance.java.  All other tests use the JMH framework.
 
-To build the tests:
+
+To build the JMH tests:
 1. Make sure you have Java and Maven installed.
 2. Clone the repo
 3. cd into the directory
